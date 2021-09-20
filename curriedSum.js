@@ -1,7 +1,6 @@
 const sum = (a,b,c) => a+b+c;
 
 function curry(fn){
-  console.log(fn.length);
   return function curried(...args) {
     if(args.length >= fn.length){
       return fn.apply(this,args);
